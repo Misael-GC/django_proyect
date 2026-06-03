@@ -72,3 +72,54 @@ py manage.py makemigrations
 py manage.py migrate
 
 ```
+
+----
+### Si descargas de github
+Si ya todo esta listo hasta aquí solo arrancas  env entorno virtual
+entras al proyecto y ejecutas
+
+```bash
+pip install -r requirements.txt
+py manage.py migrate
+```
+
+-----
+
+* se crea la carpeta api/serilizer.py, views.py, urls.py  y ahí puedes ver la logica
+* En urls.py del folder principal, en este caso erp, agregamos a urlpapatterns
+    - Incluye las URLs de la API de herramientas
+  
+
+  ```py
+  urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('tools.api.urls')),  # Incluye las URLs de la API de herramientas
+]
+
+  ```
+
+
+### Proximos pasos
+
+```bash
+py manage.py createsuperuser
+```
+* pon un nombre como admin
+* correo y contraseña
+
+corre el siguiente comando
+
+```bash
+py manage.py runserver
+```
+
+Entras a /admin y puedes entrar al dashboard
+
+en la carpeta tools/admin.py
+
+Recarga la pagina y ya lo obtendras
+
+y despues de rtegistrar una nueva herramienta 
+ve a localhost:8000/api y veras ahi la url
+
+haz pruebas con POSTMAN
