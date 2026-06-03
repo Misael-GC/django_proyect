@@ -64,7 +64,7 @@ models.py
 
 Se integra la clase con la estructura del modelo, revisa el archivo.
 
-corremos el siguiente comando para migrar
+corremos el siguiente comando para migrar (este comando lo puedes ejecutar sin problemas aunque ya tengas datos y tablas  sirve para actualizar)
 
 ```
 py manage.py makemigrations
