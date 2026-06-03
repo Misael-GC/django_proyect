@@ -123,3 +123,12 @@ y despues de rtegistrar una nueva herramienta
 ve a localhost:8000/api y veras ahi la url
 
 haz pruebas con POSTMAN
+
+
+----
+checar erp>settings.py
+
+Permite los links que pueden entrar
+```py
+# CORS_ORIGIN_ALLOW_ALL = ['*']
+```
