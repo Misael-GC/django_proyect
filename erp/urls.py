@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('tools.api.urls')),  # Incluye las URLs de la API de herramientas
     path('api/usuarios/', include('usuarios.api.urls')),
+    path('api/herramientas/', include('apps.herramientas.api.urls')),
 ]
