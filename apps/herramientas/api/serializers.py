@@ -5,5 +5,5 @@ from ..models import Herramienta
 class HerramientaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Herramienta
-        fields = ['nombre', 'descripcion'] #puede ser '_all__' si quieres incluir todos los campos
+        fields = ['nombre', 'descripcion', 'precio', 'stock'] #puede ser '_all__' si quieres incluir todos los campos
         
